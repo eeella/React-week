@@ -3,8 +3,8 @@ import axios from "axios";
 import "./assets/style.css";
 
 // 請自行替換 API_PATH
-const API_BASE = import.meta.env.VITE_API_BASE;
-const API_PATH = import.meta.env.VITE_API_PATH;
+const API_BASE = "https://ec-course-api.hexschool.io/v2"; 
+const API_PATH = "ellafang";
 
 function App() {
   // 表單資料狀態（儲存登入表單輸入）
