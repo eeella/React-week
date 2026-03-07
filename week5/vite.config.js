@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // 請把 '/React-week/week3/' 換成你真實的 GitHub 儲存庫名稱
-  base: '/React-week/week3/', 
+  // 請把 '/React-week/week5/' 換成你真實的 GitHub 儲存庫名稱
+  base: '/React-week/week5/', 
   plugins: [react()],
 })

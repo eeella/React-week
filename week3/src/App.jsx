@@ -24,8 +24,8 @@ const INITIAL_TEMPLATE_DATA = {
 function App() {
   // --- 狀態管理 (State) ---
   const [formData, setFormData] = useState({
-    username: "ella.fang@gmail.com",
-    password: "d3330594",
+    username: " ",
+    password: "",
   });
   const [isAuth, setisAuth] = useState(false);
   const [products, setProducts] = useState([]);
