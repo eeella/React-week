@@ -1,22 +1,25 @@
-import { createHashRouter } from "react-router-dom";
+// src/router.jsx
+// 1. 確保引入的是 createHashRouter 而不是 createBrowserRouter
+import { createHashRouter } from "react-router-dom"; 
 import FrontendLayout from "./layout/FrontendLayout";
 import Home from "./views/front/Home";
 import Products from "./views/front/Products";
 import Cart from "./views/front/Cart";
 import SingleProduct from "./views/front/SingleProduct";
-import NotFound from "./views/front/NotFound";
+
+// 2. 使用 createHashRouter
 export const router = createHashRouter([
     {
         path: '/',
         element: <FrontendLayout />,
         children: [
             {
-                index: true,// 預設首頁
+                index: true,
                 element: <Home />
             },
             {
                 path: 'products', 
-                element: <Products/>// 動態參數
+                element: <Products/>
             },
             {
                 path: 'cart',
@@ -25,12 +28,7 @@ export const router = createHashRouter([
             {
                 path: 'product/:id',
                 element: <SingleProduct />
-            },
-            {
-                path: '*', // 404 頁面
-                element: <NotFound />
             }
-
         ]
     }
-])
+]);

@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// vite.config.js
 export default defineConfig({
-  // 請把 '/React-week/week5/' 換成你真實的 GitHub 儲存庫名稱
-  base: '/React-week/week5/', 
+  // 修正：指向你的 Repository 名稱即可，不要加 /week5/
+  base: '/React-week/', 
   plugins: [react()],
 })
